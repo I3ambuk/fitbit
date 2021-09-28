@@ -1,0 +1,24 @@
+<svg id="background">
+  <animate attributeName="x" from="100%" to="0" begin="load" dur="0.5" easing="ease-in-out" />
+ 
+  <use href="#scrollview">
+    <use href="#view-header" height="50" fill="#80c9ff">
+      <set href="#text" attributeName="text-buffer" to="Home" />
+    </use>
+
+  </use>
+    <use id="main-list" href="#tile-list" class="horizontal-pad" y="50" height="100%-50">
+      <use id="btnChecklist" href="#main-item">
+        <set href="#text" attributeName="text-buffer" to="Checklist" />
+      </use>
+      <use id="btnDetails" href="#main-item">
+        <set href="#text" attributeName="text-buffer" to="Details" />
+      </use>
+      <use id="btnSettings" href="#main-item">
+        <set href="#text" attributeName="text-buffer" to="Settings" />
+      </use>
+      <use href="#main-footer">
+        <use id="btnCalculate" href="#icon-button" class="medium-button reload-button" />
+      </use>
+    </use>
+</svg>

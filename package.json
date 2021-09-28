@@ -1,0 +1,36 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "^5.0.2",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "41092512-8655-47bc-a7e8-10487c21c0d8",
+    "appType": "app",
+    "appDisplayName": "ImproveSleep",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#673ab7",
+    "requestedPermissions": [
+      "access_internet",
+      "access_activity",
+      "access_user_profile",
+      "access_heart_rate",
+      "access_location",
+      "run_background",
+      "access_exercise",
+      "access_calendar",
+      "access_sleep"
+    ],
+    "buildTargets": [
+      "atlas"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "ImproveSleep"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build"
+  }
+}

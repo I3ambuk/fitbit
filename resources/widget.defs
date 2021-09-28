@@ -1,0 +1,86 @@
+<svg>
+  <defs>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="import" href="/mnt/sysassets/system_widget.defs" />
+    <link rel="import" href="/mnt/sysassets/widgets/text_button.defs" />
+    <link rel="import" href="/mnt/sysassets/widgets/icon_button.defs" />
+
+
+    <link rel="import" href="/mnt/sysassets/widgets/baseview_widget.defs" />
+    <link rel="import" href="/mnt/sysassets/widgets/scrollview_widget.defs" />
+
+    <link rel="import" href="/mnt/sysassets/widgets/scrollbar.defs" />
+    <link rel="import" href="/mnt/sysassets/widgets/tile_list_widget.defs" />
+
+    <!--Common-Header-->
+    <symbol id="view-header" href="#scrollview-header">
+      <rect fill="inherit" x="0" y="0" width="100%" height="100%"/>
+      <text id="text" x="50%" y="50%+10" fill="black" font-size="30"
+        font-weight="bold" text-anchor="middle" />
+      <rect class="line" fill="#ffffff" fill-opacity="0.4"/>
+    </symbol>
+
+    <!--Main-Site-->
+    <symbol id="main-item" href="#tile-list-item" class="main-item">
+      <text id="text" />
+      <rect class="line" />
+      <rect id="touch" pointer-events="all" />
+
+    </symbol>
+    <symbol id="main-footer" href="#tile-list-footer" class="main-item main-footer">
+      <text id="text" />
+      <rect id="touch" pointer-events="all" />
+    </symbol>
+
+    <!--Checklist-->
+    <symbol id="checklist-item" href="#tile-list-item" class="checklist-item" display="none">
+        <rect class="bg-checklist-item" />
+        <text id="tile-text" />
+        <rect class="line" />
+        <rect id="touch" pointer-events="all" />
+    </symbol>
+
+    <!--Details-->
+    <symbol id="details-item" href="#tile-list-item" class="details-list-item" display="none">
+        <rect class="bg-details-item" />
+        <text  id="details-name" />
+        <rect class="details-line" />
+        <g id="arrow" transform="translate(90%, 50%) scale(0.3)">
+          <g id="rightArrow" transform="rotate(180)">
+            <rect x="0" y="0" width="50" height="10" fill="#80c9ff" />
+            <g transform="rotate(42)">
+              <rect x="0" y="0" width="32" height="10" fill="#80c9ff" />
+            </g>
+            <g transform="rotate(-45)" >
+              <rect x="-7" y="0" width="30" height="10" fill="#80c9ff" />
+            </g>
+          </g>
+        </g>
+        <rect id="touch" pointer-events="all" />
+    </symbol>
+
+    <symbol id="details-header" href="#scrollview-header">
+    <rect id="bg" x="0" y="50%" width="100%" height="50%" fill="#80c9ff" />
+    <arc id="big-arc" x="-50%" y="0" width="200%" height="200%" fill="#80c9ff"
+    arc-width="500" start-angle="320" sweep-angle="80" />
+    <arc id="small-arc" x="-50%" y="0" width="200%" height="200%" fill="#ffffff" fill-opacity="0.4"
+    arc-width="6" start-angle="320" sweep-angle="80" />
+
+      <text id="text" x="50%" y="50%+10" fill="white" font-size="24"
+        font-weight="bold" text-anchor="middle" />
+    </symbol>
+
+
+
+    <!--others-->
+    <!--
+    <symbol id="frames" href="#sprite-image">
+      <animate id="anim" attributeName="value" begin="disable"
+          from="00" to="47" dur="3"
+          repeatDur="3" repeatCount="indefinite" />
+      <image href="../../sprites/loading_00.png" width="99" height="99" x="50%-50" y="50%-50" />
+      <textarea fill="fb-white" x="0" y="50%+50" font-size="24" rows="2" text-anchor="middle" opacity="0.8" text-length="336"></textarea>
+    </symbol>
+    -->
+  </defs>
+</svg>
