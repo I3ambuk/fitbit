@@ -24,12 +24,10 @@ export function init() {
 export function render() {
 
   if (habitArray.length === 0) {
-    /**
     let myAnimation = document.getElementById("loadingAnimation");
     myAnimation.style.display = "inline";
     myAnimation.getElementsByTagName("textarea")[0].text = "Füge Gewohnheiten in der Fitbit-App hinzu..";
     myAnimation.animate("enable");
-     */
   } else {
     renderTileList();
   }

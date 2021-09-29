@@ -1,7 +1,7 @@
 <svg id="background">
   <animate attributeName="x" from="100%" to="0" begin="load" dur="0.5" easing="ease-in-out" />
   <rect width="100%" height="100%" fill="#111111"/>
-  <!--<use id="loadingAnimation" href="#frames" display="none"/>-->
+  <use id="loadingAnimation" href="#frames" display="none"/>
   <use href="#scrollview">
     <use href="#view-header" height="50" fill="#80c9ff">
       <set href="#text" attributeName="text-buffer" to="Details" />

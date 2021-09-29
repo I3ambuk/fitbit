@@ -8,6 +8,7 @@ import * as fs from "fs";
 let habitArray = [];
 
 /**
+ * Initialisiert die Checklist-View
  * Wird bei launch der Seite aufgerufen, wechselt auf die passende view-seite
  * und lädt die Habits im Speicher
  */
@@ -29,10 +30,10 @@ export function render() {
   });
   
   if (habitArray.length === 0) {
-    /**let myAnimation = document.getElementById("loadingAnimation");
+    let myAnimation = document.getElementById("loadingAnimation");
     myAnimation.style.display = "inline";
     myAnimation.getElementsByTagName("textarea")[0].text = "Füge Gewohnheiten in der Fitbit-App hinzu..";
-    myAnimation.animate("enable");*/
+    myAnimation.animate("enable");
   } else {
     renderTileList();
   }
